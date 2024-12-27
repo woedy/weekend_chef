@@ -14,7 +14,7 @@ import 'package:weekend_chef/Components/keyboard_utils.dart';
 import 'package:weekend_chef/constants.dart';
 
 Future<SignUpModel> signUpUser(data) async {
-  final url = Uri.parse(hostName + "api/accounts/register-client/");
+  final url = Uri.parse(hostName + "api/accounts/register-chef/");
   final request = http.MultipartRequest('POST', url);
 
   request.headers['Accept'] = 'application/json';

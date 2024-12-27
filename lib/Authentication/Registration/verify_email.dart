@@ -15,7 +15,7 @@ import 'package:weekend_chef/constants.dart';
 
 Future<VerifyEmailModel> verifyUserEmail(String email_token, email) async {
   final response = await http.post(
-    Uri.parse(hostName + "api/accounts/verify-client-email/"),
+    Uri.parse(hostName + "api/accounts/verify-chef-email/"),
     headers: <String, String>{
       'Content-Type': 'application/json; charset=UTF-8',
       'Accept': 'application/json',
